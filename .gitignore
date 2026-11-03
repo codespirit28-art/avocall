@@ -1,21 +1,8 @@
-# Dependencies
 node_modules/
-
-# Next.js
 .next/
+work/.next-build/
+.env*
+!.env.example
 out/
-
-# Environment variables
-.env
-.env.local
-.env.production
-.env.development
-
-# Build files
 dist/
 build/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
