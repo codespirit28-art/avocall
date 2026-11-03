@@ -1,0 +1,12 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import { Footer, Header, Icon } from "../components";
+
+export const metadata: Metadata = { title: "About", description: "Meet B. Venkatakishore, the B.Tech first-year student building AvoCall to connect present and upcoming technology with Indian businesses and farmers." };
+
+export default function AboutPage() { return <><Header /><main>
+  <section className="about-hero shell"><div><p className="eyebrow lime">ABOUT AVOCALL</p><h1>Technology should feel <em>closer</em> to people.</h1><p className="lede">AvoCall began with a simple question: what if every Indian business could give customers a helpful response, even on its busiest day?</p></div><div className="about-logo"><Image src="/avocall-logo.png" alt="AvoCall avocado phone logo" fill sizes="(max-width: 768px) 50vw, 300px" /></div></section>
+  <section className="founder shell"><div className="founder-photo"><Image src="/venkatakishore.jpg" alt="B. Venkatakishore, founder of AvoCall" fill sizes="(max-width: 800px) 100vw, 42vw" /></div><div className="founder-copy"><p className="eyebrow lime">THE PERSON BEHIND AVOCALL</p><h2>Hi, I’m<br /><em>B. Venkatakishore.</em></h2><p>I am a first-year B.Tech student and an aspiring founder. I am interested in building a startup that connects current and upcoming technology with the people who can benefit from it most—especially farmers and the businesses that serve them.</p><p>AvoCall is an early step in that journey: a practical, Telugu-first voice assistant that helps businesses never lose a customer conversation.</p><a className="button outline" href="mailto:avocall283@gmail.com">Write to Venkatakishore <Icon name="arrow" /></a></div></section>
+  <section className="mission"><div className="shell mission-grid"><p className="eyebrow lime">OUR DIRECTION</p><h2>Building technology that listens before it speaks.</h2><p>We want advanced tools to be useful, understandable, and accessible—not distant. Starting with better business calls, AvoCall is learning how AI can help people spend more time on the work that matters.</p></div></section>
+  <section className="contact shell"><p className="eyebrow lime">LET’S CONNECT</p><h2>Have an idea, a question, or a business workflow to share?</h2><div className="contact-links"><a href="mailto:avocall283@gmail.com"><Icon name="arrow" /> avocall283@gmail.com</a><a href="mailto:workwithavocall@gmail.com"><Icon name="arrow" /> workwithavocall@gmail.com</a></div></section>
+</main><Footer /></> }
